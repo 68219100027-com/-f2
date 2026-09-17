@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif, Arial;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Nav Bar */
+header {
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    color: #38bdf8;
+    font-size: 1.8rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.menu ul li a {
+    color: #f8fafc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #0f172a;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    color: #0284c7;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+}
+
+.profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+}
+
+/* Main Sections */
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #0284c7;
+    padding-left: 10px;
+}
+
+.skills-content ul, .hobby-content ul {
+    list-style: none;
+}
+
+.skills-content li, .hobby-content li {
+    margin-bottom: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.certificate-img img {
+    max-width: 300px;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #0f172a;
+    color: #94a3b8;
+}
